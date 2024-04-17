@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem PIM</title>
+
+    <script>
+        $num_final = prompt("ESCREVA O ÚLTIMO NÚMERO QUE DEVERÁ SER ESCRITO:")
+
+        document.write("<center>")
+        document.write("<h1> <font color='red'> NÚMEROS PARES E IMPARES </font> </h1>")
+        document.write("</center>")
+
+        for ($num = 1; $num <= $num_final; $num++) {
+
+            if ($num % 4 == 0) {
+                document.write("<h3> PIM")
+                document.write("<br>")
+                }
+            else if ($num % 2 == 0) {
+                document.write("<h3> Número ", $num, " - PAR")
+                document.write("<br>")
+            }
+            else {
+                document.write("<h3> Número ", $num, " - IMPAR")
+                document.write("<br>")
+            }
+        } 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
