@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Senha</title>
+
+    <script>
+
+        function senai() {  
+
+            $nome = this.Form1.fNome.value;
+
+            $senha = this.Form1.fSenha.value;
+            
+            if (($nome == "senai") && ($senha == "sumare")){
+                document.write ("<h1> BEM VINDO!! <br>")
+                document.write ("<img src='img/liberado.png' alt=''>")
+                return false;
+            }
+            else {
+
+                document.write ("<h1> LOGIN OU SENHA INCORRETOS <br>")
+                document.write ("<img src='img/negado.png' alt=''>")
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <center> <h1> LOGIN </h1> </center>
+    <h3><br><br></h3>     
+    <form name="Form1" action="" method="post" onsubmit="return senai()">
+
+        Nome: <input type="text" name="fNome" size="23"> <br> <br>
+
+        Senha: <input type="password" name="fSenha" size="23"> <br>
+        <br>
+
+
+        <input type="submit" value="GRAVAR">
+
+
+    </form>
+
+</body>
+
+</html>
